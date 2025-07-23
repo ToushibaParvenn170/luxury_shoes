@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KickIt Shoe Outlet - Luxury Edition</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            background: linear-gradient(45deg, #333, #111);
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ff4500;
+        }
+        .hover-box {
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            background: #111;
+        }
+        .hover-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(255, 69, 0, 0.5);
+        }
+        .shoe-collection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .shoe {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #222;
+            padding: 15px;
+            border-radius: 10px;
+            width: 700px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: left;
+        }
+        .shoe:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(255, 69, 0, 0.5);
+        }
+        .shoe img {
+            width: 40%;
+            border-radius: 10px;
+        }
+        .shoe-info {
+            width: 55%;
+            padding: 10px;
+        }
+        .buttons {
+            margin-top: 10px;
+        }
+        .buy, .share {
+            display: inline-block;
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            background: linear-gradient(45deg, #ff4500, #ff6347);
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .buy:hover, .share:hover {
+            background: linear-gradient(45deg, #ff6347, #ff4500);
+        }
+        .email {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">KickIt Shoe Outlet</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#why-buy">Why Buy From Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hover-box">
+        <h1>Welcome to KickIt Shoe Outlet</h1>
+        <p>Best Deals on Luxury Shoes! Limited Time Offers.</p>
+    </header>
+
+    <section id="why-buy" class="hover-box">
+        <h2>Why Buy From Us?</h2>
+        <p>✔ Premium Quality Shoes at Exclusive Prices</p>
+        <p>✔ Special Discounts & VIP Access</p>
+        <p>✔ Ultra-Fast Delivery & 24/7 Support</p>
+        <p>✔ Hassle-Free Returns & Warranty</p>
+    </section>
+
+    <section class="shoe-collection">
+        <div class="shoe">
+            <img src="https://m.media-amazon.com/images/I/612e+ka83AL._AC_UL640_FMwebp_QL65_.jpg" alt="Shoe 1">
+            <div class="shoe-info">
+                <h2>Trendy Sneakers</h2>
+                <p>Stylish and comfortable shoes for all occasions. Designed with high-quality materials to provide the best fit and durability.</p>
+                <div class="buttons">
+                    <a href="https://www.amazon.in/dp/B0D31QX7RQ" target="_blank" class="buy">Buy Now</a>
+                    <button class="share">Share</button>
+                </div>
+            </div>
+        </div>
+        <div class="shoe">
+            <img src="https://m.media-amazon.com/images/I/619lM3Dk-bL._AC_UL640_FMwebp_QL65_.jpg" alt="Shoe 2">
+            <div class="shoe-info">
+                <h2>Sport Running Shoes</h2>
+                <p>Perfect for running and workouts. Lightweight, breathable, and designed to keep you moving with maximum comfort.</p>
+                <div class="buttons">
+                    <a href="https://www.amazon.in/dp/B0DHGL1ZNH" target="_blank" class="buy">Buy Now</a>
+                    <button class="share">Share</button>
+                </div>
+            </div>
+        </div>
+        <div class="shoe">
+            <img src="https://m.media-amazon.com/images/I/61VHvg7wvCL._AC_UL640_FMwebp_QL65_.jpg" alt="Shoe 3">
+            <div class="shoe-info">
+                <h2> BRUTON Men Sport Shoes</h2>
+                <p>Running Shoes | Casual Walking Shoes | Sneakers.</p>
+                <div class="buttons">
+                    <a href="https://www.amazon.in/sspa/click?ie=UTF8&spc=MTozNDM1NjYyNTc5MDQ1MTM3OjE3Mzk5NjM5NDA6c3BfYXRmOjMwMDM0ODgyMjYwNzczMjo6MDo6&url=%2FBRUTON-Lite-Sport-Shoes-Running%2Fdp%2FB0DHGLCH6Y%2Fref%3Dsr_1_3_sspa%3Fcrid%3D32L6OVBQB3LJS%26dib%3DeyJ2IjoiMSJ9.RO0yaL3Zrti4xtgXRJZ65nKGr1OkYa-K2O51xj2iCQmWyKm4Mzi33D84hl48nQt9feGX2VmsSVjYqp_UJYo0afhRxI3EPKBFgUQIqGpQ7KOR9ghLTXl-PRiy6CkGYd64f9uMuI9YVoov_-y8-x1j785sv1itUoTYhC1Ja_xyHRQ4ow1kiVtm16P78JpC23IcvN_15RIZnzBetkj4IkY5NpiFoWtR8dXskVA9-yTwvD81765tvDb5BHgSXIWDEcdgBxBoM100iYbWpZQvnrky_5mYs64qfI0CxbVYUjdrx14.f52Xh6Wz8iun3GF96isN9uN3EqJRj40Rg8Hhy0yEMBE%26dib_tag%3Dse%26keywords%3Dshoes%26qid%3D1739963940%26sprefix%3Dshoe%252Caps%252C279%26sr%3D8-3-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1" target="_blank" class="buy">Buy Now</a>
+                    <button class="share">Share</button>
+                </div>
+            </div>
+        </div>
+        <div class="shoe">
+            <img src="https://m.media-amazon.com/images/I/71f3BmjCwtL._AC_UL640_FMwebp_QL65_.jpg" alt="Shoe 4">
+            <div class="shoe-info">
+                <h2> BRUTON Men Sport Shoes </h2>
+                <p>BRUTON EVA Lite Sport Shoes Running Shoes for Men- Blue</p>
+                <div class="buttons">
+                    <a href="https://www.amazon.in/sspa/click?ie=UTF8&spc=MTozNDM1NjYyNTc5MDQ1MTM3OjE3Mzk5NjM5NDA6c3BfYXRmOjMwMDM0OTU1NjU2MjYzMjo6MDo6&url=%2FBRUTON-Lite-Sport-Shoes-Running%2Fdp%2FB0DHGM2YWR%2Fref%3Dsr_1_1_sspa%3Fcrid%3D32L6OVBQB3LJS%26dib%3DeyJ2IjoiMSJ9.RO0yaL3Zrti4xtgXRJZ65nKGr1OkYa-K2O51xj2iCQmWyKm4Mzi33D84hl48nQt9feGX2VmsSVjYqp_UJYo0afhRxI3EPKBFgUQIqGpQ7KOR9ghLTXl-PRiy6CkGYd64f9uMuI9YVoov_-y8-x1j785sv1itUoTYhC1Ja_xyHRQ4ow1kiVtm16P78JpC23IcvN_15RIZnzBetkj4IkY5NpiFoWtR8dXskVA9-yTwvD81765tvDb5BHgSXIWDEcdgBxBoM100iYbWpZQvnrky_5mYs64qfI0CxbVYUjdrx14.f52Xh6Wz8iun3GF96isN9uN3EqJRj40Rg8Hhy0yEMBE%26dib_tag%3Dse%26keywords%3Dshoes%26qid%3D1739963940%26sprefix%3Dshoe%252Caps%252C279%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1" target="_blank" class="buy">Buy Now</a>
+                    <button class="share">Share</button>
+                </div>
+            </div>
+        </div>
+        <div class="shoe">
+            <img src="https://m.media-amazon.com/images/I/61RFlIUeaIL._AC_UL640_FMwebp_QL65_.jpg" alt="Shoe 5">
+            <div class="shoe-info">
+                <h2> LANCER Mens Indus-251 Running Shoe </h2>
+                <p> Running Shoes | Casual Walking Shoes | Sneakers</p>
+                <div class="buttons">
+                    <a href="https://www.amazon.in/Lancer-White-Sports-Running-Indus-251/dp/B081LGBPT7/ref=sr_1_6?crid=32L6OVBQB3LJS&dib=eyJ2IjoiMSJ9.RO0yaL3Zrti4xtgXRJZ65nKGr1OkYa-K2O51xj2iCQmWyKm4Mzi33D84hl48nQt9feGX2VmsSVjYqp_UJYo0afhRxI3EPKBFgUQIqGpQ7KOR9ghLTXl-PRiy6CkGYd64f9uMuI9YVoov_-y8-x1j785sv1itUoTYhC1Ja_xyHRQ4ow1kiVtm16P78JpC23IcvN_15RIZnzBetkj4IkY5NpiFoWtR8dXskVA9-yTwvD81765tvDb5BHgSXIWDEcdgBxBoM100iYbWpZQvnrky_8VDHyFFbXMthQMRuT-fs2HcUFmKLIGk9PduvCvMcG80UF1Ymy4ca_CvuCz8_Aa8tpzjUSq5ZmoRAXRXnska3vhfj6QhZmXPBS7O2ziFiGGJf1eWT5Q0biYnOJZUXGQ1oNUnI3TWP2UpM_ghBDjlay7y_9jAVb3yeEzosQzFgI5B.qd7y_3gmgerPDssT-j0jkhKHwuCI9-Jhh_7SbO44M34&dib_tag=se&keywords=shoes&qid=1739963940&sprefix=shoe%2Caps%2C279&sr=8-6" target="_blank" class="buy">Buy Now</a>
+                    <button class="share">Share</button>
+                </div>
+            </div>
+        </div>
+        <div class="shoe">
+            <img src="https://m.media-amazon.com/images/I/61ddN5E08EL._SY695_.jpg" alt="Shoe 6">
+            <div class="shoe-info">
+                <h2> Campus  </h2>
+                <p> Campus Mens Oxyfit (N) Walking Shoes</p>
+                <div class="buttons">
+                    <a href="https://www.amazon.in/Campus-OXYFIT-Walking-Shoes-India/dp/B09RPVZK5S/ref=sr_1_8?crid=32L6OVBQB3LJS&dib=eyJ2IjoiMSJ9.RO0yaL3Zrti4xtgXRJZ65nKGr1OkYa-K2O51xj2iCQmWyKm4Mzi33D84hl48nQt9feGX2VmsSVjYqp_UJYo0afhRxI3EPKBFgUQIqGpQ7KOR9ghLTXl-PRiy6CkGYd64f9uMuI9YVoov_-y8-x1j785sv1itUoTYhC1Ja_xyHRQ4ow1kiVtm16P78JpC23IcvN_15RIZnzBetkj4IkY5NpiFoWtR8dXskVA9-yTwvD81765tvDb5BHgSXIWDEcdgBxBoM100iYbWpZQvnrky_8VDHyFFbXMthQMRuT-fs2HcUFmKLIGk9PduvCvMcG80UF1Ymy4ca_CvuCz8_Aa8tpzjUSq5ZmoRAXRXnska3vhfj6QhZmXPBS7O2ziFiGGJf1eWT5Q0biYnOJZUXGQ1oNUnI3TWP2UpM_ghBDjlay7y_9jAVb3yeEzosQzFgI5B.qd7y_3gmgerPDssT-j0jkhKHwuCI9-Jhh_7SbO44M34&dib_tag=se&keywords=shoes&qid=1739963940&sprefix=shoe%2Caps%2C279&sr=8-8" target="_blank" class="buy">Buy Now</a>
+                    <button class="share">Share</button>
+                </div>
+            </div>
+        </div>
+        <div class="shoe">
+            <img src="https://m.media-amazon.com/images/I/61TStdiQN6L._AC_UL640_FMwebp_QL65_.jpg" alt="Shoe 7">
+            <div class="shoe-info">
+                <h2> Bacca Bucci Men's  </h2>
+                <p> Bacca Bucci Men's Comfy Mid-Top Casual Chunky Streetwear Fashion Sneakers | Solid Color Pattern with Rubber Outsole | Model: Tiger</p>
+                <div class="buttons">
+                    <a href="https://www.amazon.in/sspa/click?ie=UTF8&spc=MTo1NDI0ODIxODk2MzAwNDQwOjE3Mzk5NjUyOTY6c3BfYXRmOjMwMDM0NTEyMTU1MTczMjo6MDo6&url=%2FBacca-Bucci-Mid-Top-Streetwear-Sneakers%2Fdp%2FB09LS3SMSX%2Fref%3Dsr_1_1_sspa%3Fcrid%3D289AM3H26ZGZ2%26dib%3DeyJ2IjoiMSJ9.r8SDbA7fMddmDH7hGo6okYusldcl33fyYPiDBhEHMMSjGDjYCQ2bYcgNOduYYGPoXoZ8jVXQa7ydYDdSMp22fVYIeSQJ_Am6_t--ghHVdqxv87kEMBeIUQhX7uAYYEq2dC1xTtHOy8E6vmN01C7OAernjKw4MyCkCGpouXeCvWK_qDz-lzKbjMw_aEkl19dMm8wOl4DlhoUM8pO_A96i64QIO4P_B2QaJ_ealOu87VttPcm3dYbn1qpe5lBOIA1M0Wu8Vv2Im54vytuYSx93NaHIF6y3hyRpcWiTlG848Ps.v6pfxmG-Dbz-Fefb95BGwtNqHTarygEw_9G7RkVA4Aw%26dib_tag%3Dse%26keywords%3Dshoes%2Bnike%2Bjordan%26nsdOptOutParam%3Dtrue%26qid%3D1739965296%26sprefix%3Dshoes%2Bnik%252Caps%252C311%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1" target="_blank" class="buy">Buy Now</a>
+                    <button class="share">Share</button>
+                </div>
+            </div>
+        </div>
+        <div class="shoe">
+            <img src="https://m.media-amazon.com/images/I/81E3K34qsHL._SX695_.jpg" alt="Shoe 8">
+            <div class="shoe-info">
+                <h2> Adidas Men </h2>
+                <p> Adidas Men Synthetic & Textile Adiscend M Running Shoes DKGREY/DOVGRY/IMPYEL UK-8</p>
+                <div class="buttons">
+                    <a href="https://www.amazon.in/Adidas-Impact-Yellow-Adiscend-Running/dp/B09N3N7Z2K/ref=sr_1_17?crid=3Q6UCET3LDUHF&dib=eyJ2IjoiMSJ9.AmZRS3fcAiQsx4tTc5SOKCzSTxqb6TJT_VJvRF1DKV7xYU_Le9ztg4wdphjcPxGu-pa2OkDXnmwR_uk_nYVJVZyFONxx9vDBnSrLCXua1zC-NsFCskRGXJrXbC-HzG4T0v_G5oVrCRnGRW2p4V3eodXxF1m9hX15L85oWwsDCtoeW0cDi0Mnpwgwyy73xUBP5ReIDc_YLoDl5zIUeAzcMD8y2CUnmaA8xBlC7-O3je4xogjzhg_ZEzKAF_AAGunhQ1JYuQkfuQwe6PH6OQULTgi6zLkbCVlNPNpF-WdB0-TdiHHYQG74s8-KRcWi7M2SIBXyt2l3IQDrW3mT6529SFeVD0x5ND6qYdl5oXOyS9AS8jtFWPq9FR5jXZb16EKqioQ2JD0f7h2rUbqiw-Yv77Ytp0eKKQ-VHGlNzX5WxHGXDCnxwYSEEAcw3yFMAg4T.jVjGRSiD50TSxfb7TfLx3dA3xQ9ltdxjGhax2agQaH8&dib_tag=se&keywords=shoes+adidas&nsdOptOutParam=true&qid=1739965529&sprefix=shoes+adidas%2Caps%2C271&sr=8-17" target="_blank" class="buy">Buy Now</a>
+                    <button class="share">Share</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us at <a href="mailto:toushibaparveen1706@gmail.com" class="email">toushibaparveen1706@gmail.com</a></p>
+    </section>
+
+    <script>
+        document.querySelectorAll('.share').forEach(button => {
+            button.addEventListener('click', () => {
+                if (navigator.share) {
+                    navigator.share({
+                        title: 'Check out these amazing shoes!',
+                        url: window.location.href
+                    }).catch(console.error);
+                } else {
+                    alert('Sharing not supported on this browser.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
